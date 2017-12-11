@@ -1,0 +1,146 @@
+ /*公共模块 */
+
+/* 按钮 */
+.btn{
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  line-height: 50px;
+  text-align: center;
+  background:#f29224;
+  border-color: #f29224;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.btn:hover{
+  background: #e28419;
+  border-color: #e28419;
+  color: #fff;
+}
+.btn:active{
+  background: #e28419;
+  border-color: #e28419;
+  color: #fff;
+}
+.btn.btn-sm{
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+}
+@media (max-width: 768px) and (min-width: 320px){
+  .btn{
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+  .btn.btn-sm{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+}
+
+/* 边线 */
+.border-bottom{
+  border-bottom: #dbdbdb 1px solid;
+}
+
+/* 首页栏目 */
+.column-title .title{
+  padding: 10px;
+  margin-bottom: 0;
+  color: #f29224;
+  font-size: 40px;
+}
+.column-title .text{
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+@media (max-width: 768px) and (min-width: 320px){
+  .column-title .title{
+    padding: 10px;
+    margin-bottom: 0;
+    color: #f29224;
+    font-size: 20px;
+  }
+}
+
+/* 分页样式 */
+.pagination>li>a,
+.pagination>li>span{
+  padding: 9px 13px;
+  border: #f29224 solid 2px;
+  margin: 0 3px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 100%;
+}
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus,
+.pagination>li>a.active,
+.pagination>li>span.active{
+  background: #f29224;
+  color: #fff;
+  border:#f29224 solid 2px;
+}
+/* 表单样式 */
+.form-control{
+  height: 40px;
+  font-size: 14px;
+}
+/* 首页样式 */
+
+
+/* 关于我们 */
+.banner-top{
+  width: 100%;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 24px;
+  color: #fff;
+}
+@media (max-width: 768px) and (min-width: 320px){
+  .banner-top{
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+  }
+}
+/* 分类菜单 */
+.class-menu{
+  width: 100%;
+  background: #fff;
+}
+.class-menu a{
+  display: inline-block;
+  padding: 12px 15px 12px 0;
+  color:#777777;
+}
+.class-menu a:hover, .class-menu a.active{
+  color:  #f29224;
+  text-decoration: none;
+}
+/* 服务内容 */
+
+
+/* 成功案例 */
+
+
+/* 招聘信息 */
+
+
+/* 新闻资讯 */
+
+
+/* 联系我们
