@@ -297,6 +297,18 @@
    margin-top: 10px;
  }
 
+ @media (max-width:480px){
+  .footer img.logo {
+    margin-left: -20px;
+    transform: scale(.9,.9);
+    -webkit-transform: scale(.9,.9);
+    -moz-transform: scale(.9,.9);
+    -ms-transform: scale(.9,.9);
+    -o-transform: scale(.9,.9);
+}
+ }
+
+
  .footer .content-box {
    padding-top: 30px;
    padding-bottom: 30px;
