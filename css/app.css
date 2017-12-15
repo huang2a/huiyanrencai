@@ -1,5 +1,9 @@
  /*基本样式*/
 
+ * {
+  font-family: Microsoft YaHei;
+ }
+
  body {
    font-family: "Pingfang SC,Microsoft YaHei,consola,Verdana,Arial,Tahoma,sans-serif";
    width: 100%;
@@ -138,7 +142,7 @@
  .divider-light-gap {
    width: 100%;
    height: 1px;
-   margin: 20px 0;
+   margin: 0 0 10px;
    background: #ededed;
  }
 
@@ -512,7 +516,50 @@
 
 .toolbar .tool-list a{
   display: block;
+  position: relative;
 }
+
+.toolbar-btn,.toolbar .tool-list a:hover{
+  cursor: pointer;
+}
+
+.tool-list a .tool-hover{
+  width: 160px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -160px;
+  background: #fff;
+  color: #f09125;
+  font-size: 18px;
+  line-height: 80px;
+  opacity: 0;
+  text-align: center;
+}
+
+.tool-list a:hover .tool-hover{
+  opacity: 1;
+  right: 100%;
+}
+
+.tool-list a .tool-hover.qrcode{
+  height: 160px;
+}
+
+.tool-list a .tool-hover.qrcode img{
+  width: 100%;
+}
+
+.tool-list a .tool-hover,
+.tool-list a:hover .tool-hover{
+  transition: all .35s ease;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+}
+
 
  /* 页面栏目 */
 
@@ -525,7 +572,7 @@
  }
 
  .page-main {
-   padding: 40px 0;
+   padding: 30px 0;
  }
 
  @media (max-width:768px) {
@@ -535,7 +582,7 @@
  }
 
  .p-content-box {
-   padding: 30px;
+   padding: 20px;
  }
 
  @media (max-width:480px) {
@@ -546,6 +593,10 @@
 
  .p-sidebar {
    padding: 20px;
+ }
+
+ .p-sidebar .divider-light-gap {
+   margin: 30px 0 20px;
  }
 
  .p-sidebar .search-bar {
@@ -634,7 +685,9 @@
  .p-content-box .p-box-main {
    padding-top: 10px;
  }
-
+ .info-footer{
+   margin: 0;
+ }
  .info-footer>*{
    display: inline-block;
    height: 34px;
@@ -687,6 +740,12 @@
  }
 
  @media(max-width:480px) {
+
+  .pagination>li:nth-last-child(2),
+  .pagination>li:nth-last-child(3){
+    display: none;
+  }
+
    .pagination>li>a,
    .pagination>li>span {
      padding: 6px 8px;
@@ -919,7 +978,7 @@
 
  .jobs-card .card-box:hover{
   border: 2px solid #999;
-  box-shadow: 0 0 15px #333;
+  box-shadow: 0 5px 30px rgba(51, 51, 51, 0.3);  
 }
 
  .jobs-card .card-box:hover,
@@ -1199,8 +1258,6 @@
    overflow: hidden;
  }
 
- /* 服务内容 */
-
  /* 成功案例、新闻资讯 */
 
  @media(max-width:992px) {
@@ -1211,8 +1268,13 @@
    }
  }
 
+ .card-item .content-title,
  .list-item .content-title {
    margin-top: 0;
+ }
+
+ .card-item .content-desc{
+   margin: 0;
  }
 
  /* 招聘信息 */
@@ -1231,10 +1293,16 @@
    padding: 20px;
    background: #fff;
  }
+ @media (max-width:480px){
+  .info-cards .info-footer>span:last-of-type {
+    display: none;
+  }
+ }
+
 
  @media(min-width:992px) {
    .card-box .desc-wrapper {
-     height: 100px;
+     height: 60px;
      overflow: hidden;
    }
    .card-box .desc-wrapper .content-desc {
