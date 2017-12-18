@@ -13,7 +13,7 @@
   <meta name="description" content="慧眼咨询">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+  <link href="css/mmenu.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -83,11 +83,12 @@
             </ul>
           </div>
         </div>
-        <button type="button" class="navbar-toggle">
+
+        <a href="#menu" class="navbar-toggle">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -477,45 +478,43 @@
         </div>
       </div>
     </div>
-  </div>  
-  <div class="m-menu">
-    <ul>
-      <li class="active">
-        <a href="index.html">首页</a>
-      </li>
-      <li>
-        <a href="about.html">关于我们</a>
-      </li>
-      <li>
-        <span>服务内容</span>
-        <ul>
-          <li>
-            <a href="##">Item 1</a>
-          </li>
-          <li>
-            <a href="##">Item 2</a>
-          </li>
-          <li>
-            <a href="##">Item 3</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="cases.html">成功案例</a>
-      </li>
-      <li>
-        <a href="jobs.html">招聘信息</a>
-      </li>
-      <li>
-        <a href="news.html">新闻资讯</a>
-      </li>
-      <li>
-        <a href="contact.html">联系我们</a>
-      </li>
-    </ul>
   </div>
+
+  <div id="menu">
+  <ul>
+    <h3>慧眼人才</h3>
+    <li><a href="index.html">文体活动</a>
+      <ul>
+        <li><a href="index.html">文体活动首页</a></li>
+        <li><a href="theater.html">戏剧表演</a></li>
+        <li><a href="sports.html">体育赛事</a></li>
+      </ul>
+    </li>
+    <li><a href="#">便民服务</a>
+        <ul>
+            <li><a href="publicService.html">公共服务</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="#">公益培训</a></li>
+            <li><a href="survey.html">在线调查</a></li>
+        </ul>
+    </li>
+    <li><a href="#">福利来了</a>
+      <ul>
+        <li><a href="coupons.html">我要抢券</a></li>
+        <li><a href="gift.html">积分兑换</a></li>
+        <li><a href="culturalPro.html">文化产品</a></li>
+        <li><a href="loginChoose.html">会员登录</a></li>
+      </ul>
+    </li>
+    <li><a href="signin.html">今日签到</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</div>
   <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/jquery.mmenu.all.js"></script>
+  <script src="js/mmenu.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/swiper.animate1.0.2.min.js"></script>
   <script src="js/swiper.jquery.js"></script>
